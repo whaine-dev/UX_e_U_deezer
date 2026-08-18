@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Análise de Design UX/UI — Deezer Mobile</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="src/styler.css">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+<!-- ============ NAV DE BOLINHAS (indicador de seção, tipo progresso do player) ============ -->
+<nav class="dotnav" id="dotnav">
+  <div class="track"></div>
+  <button data-target="hero" data-label="Início"></button>
+  <button data-target="login" data-label="Login"></button>
+  <button data-target="home" data-label="Home"></button>
+  <button data-target="player" data-label="Player"></button>
+  <button data-target="acessibilidade" data-label="Acessibilidade"></button>
+  <button data-target="layout" data-label="Layout"></button>
+  <button data-target="tipografia" data-label="Tipografia & Cores"></button>
+  <button data-target="fluxo" data-label="Fluxo de Interação"></button>
+  <button data-target="feedback" data-label="Feedback"></button>
+  <button data-target="equipe" data-label="Equipe"></button>
+</nav>
+
+<div class="scroller" id="scroller">
+
+  <!-- ============ HERO ============ -->
+  <section class="section" id="hero">
+    <span class="hero-tag">Análise de Design · UX/UI</span>
+    <h1>Aplicativo <span>Deezer</span><br>— Versão Mobile</h1>
+    <p class="lead">Mockups de referência das principais telas e avaliação de layout, tipografia, cores, fluxo de interação, usabilidade e feedback ao usuário.</p>
+
+    <div class="about-ux">
+      UX (experiência do usuário) e UI (interface do usuário) são as duas faces de um mesmo objetivo: fazer com que uma pessoa entenda, sinta e use um produto digital sem esforço. UI cuida do que se vê — cor, tipografia, espaçamento, ícones. UX cuida do que se sente — fluxo, clareza, previsibilidade. Esta análise percorre as telas do Deezer sob esses dois olhares.
+    </div>
+
+    <div class="chip-row">
+      <span class="chip">Login</span>
+      <span class="chip">Home</span>
+      <span class="chip">Player</span>
+      <span class="chip">Navegação</span>
+      <span class="chip">Acessibilidade</span>
+    </div>
+  <!-- ============ SLIDE 2 · LOGIN ============ -->
+  <section class="section" id="login">
+    <div class="split">
+      <div>
+        <div class="eyebrow">Slide 1 · Onboarding · Kauã Nascimento</div>
+        <h2>Tela de Boas-vindas e Login</h2>
+        <div class="insight">
+          <div class="num">1</div>
+          <div><h3>Hierarquia visual clara</h3><p>Logotipo e proposta de valor centralizados guiam o olhar antes da ação.</p></div>
+        </div>
+        <div class="insight">
+          <div class="num">2</div>
+          <div><h3>Múltiplas opções de acesso</h3><p>Login social reduz fricção; opção por e-mail atende quem prefere método tradicional.</p></div>
+        </div>
+        <div class="insight">
+          <div class="num">3</div>
+          <div><h3>Contraste alto</h3><p>Fundo escuro com CTA branco garante leitura imediata do botão principal.</p></div>
+        </div>
+      </div>
+      <div class="phone-col">
+        <div class="phone-frame">
+          <!-- Substitua a imagem abaixo pelo print da tela de Login (proporção iPhone 11) -->
+          <div class="phone-screen">
+            <img src="src/img/tela_de_login.webp" alt="Print da tela de Login" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+            <div class="placeholder"><b>PRINT · LOGIN</b>coloque aqui o arquivo<br>"print-login.jpg"<br>(proporção iPhone 11)</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SLIDE 2 · HOME ============ -->
+  <section class="section alt" id="home">
+    <div class="split reverse">
+      <div class="phone-col">
+        <div class="phone-frame">
+          <!-- Substitua a imagem abaixo pelo print da tela Inicial (proporção iPhone 11) -->
+          <div class="phone-screen">
+            <img src="src/img/tela_de_inicial.webp" alt="Print da tela Inicial" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+            <div class="placeholder"><b>PRINT · HOME</b>coloque aqui o arquivo<br>"print-home.jpg"<br>(proporção iPhone 11)</div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="eyebrow">Slide 2 · Interface · Douglas Cabral</div>
+        <h2>Apresentação da Interface — Tela Inicial</h2>
+        <div class="insight">
+          <div class="num">1</div>
+          <div><h3>Rolagem horizontal por categoria</h3><p>Cards organizados em carrosséis agrupam conteúdo por contexto (mixes, recomendações, histórico).</p></div>
+        </div>
+        <div class="insight">
+          <div class="num">2</div>
+          <div><h3>Navegação inferior fixa</h3><p>Quatro destinos principais sempre visíveis, com ícone + rótulo reduzindo ambiguidade.</p></div>
+        </div>
+        <div class="insight">
+          <div class="num">3</div>
+          <div><h3>Densidade de informação equilibrada</h3><p>Espaçamento generoso entre seções evita poluição visual mesmo com muito conteúdo.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SLIDE 2 · PLAYER ============ -->
+  <section class="section" id="player">
+    <div class="split">
+      <div>
+        <div class="eyebrow">Slide 2 · Interface · Douglas Cabral</div>
+        <h2>Apresentação da Interface — Player de Música</h2>
+        <div class="insight">
+          <div class="num">1</div>
+          <div><h3>Foco no conteúdo (capa em destaque)</h3><p>A arte do álbum ocupa a maior área da tela, reforçando a experiência imersiva.</p></div>
+        </div>
+        <div class="insight">
+          <div class="num">2</div>
+          <div><h3>Controles com alvo de toque adequado</h3><p>Botão de play maior e centralizado segue diretrizes de ergonomia para toque.</p></div>
+        </div>
+        <div class="insight">
+          <div class="num">3</div>
+          <div><h3>Acesso rápido a letras e fila</h3><p>Funções secundárias ficam visíveis, mas discretas, sem competir com os controles principais.</p></div>
+        </div>
+      </div>
+      <div class="phone-col">
+        <div class="phone-frame">
+          <!-- Substitua a imagem abaixo pelo print do Player (proporção iPhone 11) -->
+          <div class="phone-screen">
+            <img src="src/img/tela_de_musica.webp" alt="Print do Player de música" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+            <div class="placeholder"><b>PRINT · PLAYER</b>coloque aqui o arquivo<br>"print-player.jpg"<br>(proporção iPhone 11)</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SLIDE 3 · FUNCIONALIDADES / ACESSIBILIDADE ============ -->
+  <section class="section alt" id="acessibilidade">
+    <div class="eyebrow">Slide 3 · Funcionalidades · Kauã Nascimento</div>
+    <h2>Funcionalidades e Acessibilidade</h2>
+    <div class="card-grid cols-3">
+      <div class="card"><span class="num">1</span><h3>Configurações agrupadas e nomeadas com clareza</h3><p>Cada recurso de acessibilidade tem rótulo direto, sem depender só de ícone.</p></div>
+      <div class="card"><span class="num">2</span><h3>Toggles com estado visual óbvio</h3><p>Cor preenchida indica "ativado" e a bolinha desloca-se, seguindo padrão de plataformas móveis.</p></div>
+      <div class="card"><span class="num">3</span><h3>Cobertura de necessidades diversas</h3><p>Fonte ajustável, alto contraste, leitor de tela e controle por voz atendem públicos com diferentes limitações.</p></div>
+    </div>
+    <div class="feature-chips">
+      <span>Tamanho da fonte</span>
+      <span>Alto contraste</span>
+      <span>Modo escuro</span>
+      <span>Legendas / letras sincronizadas</span>
+      <span>Compatível com leitor de tela</span>
+      <span>Controle por voz</span>
+    </div>
+  </section>
+
+  <!-- ============ ANÁLISE 1 · LAYOUT ============ -->
+  <section class="section" id="layout">
+    <div class="eyebrow">Análise 1 de 4</div>
+    <h2>Layout e Disposição de Elementos</h2>
+    <div class="card-grid">
+      <div class="card"><span class="num">1</span><h3>Hierarquia vertical</h3><p>As telas seguem um padrão claro: cabeçalho, conteúdo rolável e navegação fixa no rodapé — reduz a curva de aprendizado entre telas.</p></div>
+      <div class="card"><span class="num">2</span><h3>Agrupamento por carrosséis</h3><p>Conteúdos relacionados (mixes, recomendações, histórico) são organizados em faixas horizontais, otimizando espaço vertical limitado.</p></div>
+      <div class="card"><span class="num">3</span><h3>Zona de alcance do polegar</h3><p>Ações mais usadas (play, navegação) ficam nos terços inferiores da tela, coerente com uso de uma mão.</p></div>
+      <div class="card"><span class="num">4</span><h3>Consistência entre telas</h3><p>Login, Home, Player e Configurações compartilham grade, espaçamentos e cantos arredondados — reforça identidade única do produto.</p></div>
+    </div>
+  </section>
+
+  <!-- ============ ANÁLISE 2 · TIPOGRAFIA & CORES ============ -->
+  <section class="section alt" id="tipografia">
+    <div class="eyebrow">Análise 2 de 4 · Keven Whaine</div>
+    <h2>Tipografia e Cores</h2>
+    <div class="type-color-grid">
+      <div>
+        <div class="col-label">Tipografia</div>
+        <div class="type-sample">
+          <div class="big">Sans-serif geométrica</div>
+          <p>Fonte de sistema (estilo Helvetica/SF), priorizando legibilidade em telas pequenas.</p>
+        </div>
+        <div class="type-sample">
+          <div class="big" style="font-weight:700;">Poucos pesos, uso consistente</div>
+          <p>Bold para títulos e faixas em reprodução; regular para metadados e descrições.</p>
+        </div>
+        <div class="type-sample">
+          <div class="big" style="font-size:1.1rem;">Escala hierárquica enxuta</div>
+          <p>3–4 tamanhos cobrem toda a interface, evitando ruído visual e facilitando escaneabilidade.</p>
+        </div>
+      </div>
+      <div>
+        <div class="col-label">Paleta de cores</div>
+        <div class="swatch-row"><div class="swatch" style="background:#121014;"></div><div><h3>Fundo primário</h3><p>Preto/cinza-escuro reduz fadiga visual em sessões longas de audição.</p></div></div>
+        <div class="swatch-row"><div class="swatch" style="background:var(--purple);"></div><div><h3>Acento principal — Roxo</h3><p>Usado em CTAs e estados ativos — reforça identidade da marca.</p></div></div>
+        <div class="swatch-row"><div class="swatch" style="background:var(--pink);"></div><div><h3>Acento secundário — Rosa/magenta</h3><p>Usado em gradientes e destaques pontuais, criando energia visual.</p></div></div>
+        <div class="swatch-row"><div class="swatch" style="background:#ffffff;"></div><div><h3>Texto e ícones ativos</h3><p>Branco puro sobre fundo escuro garante contraste máximo (WCAG AA/AAA).</p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ANÁLISE 3 · FLUXO ============ -->
+  <section class="section" id="fluxo">
+    <div class="eyebrow">Análise 3 de 4 · Carlos Gustavo</div>
+    <h2>Fluxo de Interação e Facilidade de Uso</h2>
+    <div class="flow">
+      <div class="step">Onboarding / Login</div><div class="arrow">→</div>
+      <div class="step">Descoberta (Home)</div><div class="arrow">→</div>
+      <div class="step">Seleção de conteúdo</div><div class="arrow">→</div>
+      <div class="step">Reprodução (Player)</div><div class="arrow">→</div>
+      <div class="step">Ajustes / Acessibilidade</div>
+    </div>
+    <div class="card-grid">
+      <div class="card"><span class="num">1</span><h3>Poucos passos até o objetivo principal</h3><p>Do login à primeira reprodução são no máximo 2–3 toques, reduzindo abandono no primeiro uso.</p></div>
+      <div class="card"><span class="num">2</span><h3>Padrões de navegação previsíveis</h3><p>Barra inferior fixa e gestos padrão (arrastar para minimizar player) seguem convenções já conhecidas.</p></div>
+      <div class="card"><span class="num">3</span><h3>Baixa carga cognitiva por tela</h3><p>Cada tela tem uma ação primária evidente, evitando decisões simultâneas.</p></div>
+      <div class="card"><span class="num">4</span><h3>Ponto de atenção</h3><p>Configurações de acessibilidade estão em submenu — usuários que dependem delas podem levar mais tempo para descobri-las.</p></div>
+    </div>
+  </section>
+
+  <!-- ============ ANÁLISE 4 · FEEDBACK & RECOMENDAÇÕES ============ -->
+  <section class="section alt" id="feedback">
+    <div class="eyebrow">Análise 4 de 4 · Adoni Sena</div>
+    <h2>Feedback do Usuário e Recomendações</h2>
+    <div class="col-label">Mecanismos de feedback observados</div>
+    <div class="card-grid" style="margin-bottom:2.2em;">
+      <div class="card"><h3>Estados visuais de toggle</h3><p>Cor e posição confirmam imediatamente se uma opção está ativa.</p></div>
+      <div class="card"><h3>Barra de progresso do player</h3><p>Fornece retorno contínuo do tempo decorrido e restante da faixa.</p></div>
+    </div>
+    <div class="col-label">Recomendações de melhoria</div>
+    <div class="card-grid">
+      <div class="card"><h3>Atalho de acessibilidade</h3><p>Direto no primeiro acesso, não apenas em submenu de configurações.</p></div>
+      <div class="card"><h3>Confirmação visual explícita</h3><p>Após ações críticas, como adicionar à biblioteca ou criar playlist.</p></div>
+      <div class="card"><h3>Alto contraste + ícones maiores</h3><p>Aumentar também o tamanho dos ícones, não só do texto.</p></div>
+      <div class="card"><h3>Testes com leitores de tela reais</h3><p>Para validar a ordem de leitura dos elementos.</p></div>
+    </div>
+  </section>
+
+  <!-- ============ EQUIPE ============ -->
+  <section class="section" id="equipe">
+    <div class="eyebrow">Trabalho desenvolvido por</div>
+    <h2>Equipe</h2>
+    <p class="lead">5 alunos responsáveis por esta análise de UX/UI.</p>
+    <div class="team-grid">
+      <!-- Aluno 1 -->
+      <div class="student-card">
+        <div class="student-photo">
+          <img src="foto-aluno-1.jpg" alt="Foto do aluno 1" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+          <span class="ph-txt">foto-aluno-1.jpg</span>
+        </div>
+        <h3>Douglas Cabral 1</h3>
+        <p class="role"><a href="#" target="_blank">link do perfil</a></p>
+        <div class="icon-row">
+          <a href="#" target="_blank" title="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM.5 8.5h4V23h-4V8.5zM8.5 8.5h3.8v2h.1c.53-.98 1.83-2 3.77-2 4.03 0 4.78 2.5 4.78 5.75V23h-4v-6.9c0-1.65-.03-3.77-2.3-3.77-2.3 0-2.65 1.8-2.65 3.65V23h-4V8.5z"/></svg></a>
+          <a href="#" target="_blank" title="Instagram"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2c2.7 0 3.06.01 4.12.06 1.06.05 1.79.22 2.43.47.66.26 1.22.6 1.77 1.15.55.55.89 1.11 1.15 1.77.25.64.42 1.37.47 2.43C21.99 8.94 22 9.3 22 12s-.01 3.06-.06 4.12c-.05 1.06-.22 1.79-.47 2.43-.26.66-.6 1.22-1.15 1.77-.55.55-1.11.89-1.77 1.15-.64.25-1.37.42-2.43.47C15.06 21.99 14.7 22 12 22s-3.06-.01-4.12-.06c-1.06-.05-1.79-.22-2.43-.47-.66-.26-1.22-.6-1.77-1.15-.55-.55-.89-1.11-1.15-1.77-.25-.64-.42-1.37-.47-2.43C2.01 15.06 2 14.7 2 12s.01-3.06.06-4.12c.05-1.06.22-1.79.47-2.43.26-.66.6-1.22 1.15-1.77.55-.55 1.11-.89 1.77-1.15.64-.25 1.37-.42 2.43-.47C8.94 2.01 9.3 2 12 2zm0 5a5 5 0 100 10 5 5 0 000-10zm0 8.2a3.2 3.2 0 110-6.4 3.2 3.2 0 010 6.4zm5.4-8.4a1.17 1.17 0 100-2.34 1.17 1.17 0 000 2.34z"/></svg></a>
+          <a href="#" target="_blank" title="GitHub"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .3a12 12 0 00-3.8 23.38c.6.1.82-.26.82-.58v-2.2c-3.34.72-4.04-1.6-4.04-1.6-.55-1.4-1.34-1.76-1.34-1.76-1.1-.75.08-.73.08-.73 1.2.09 1.84 1.24 1.84 1.24 1.08 1.84 2.83 1.3 3.52 1 .1-.79.42-1.3.76-1.6-2.67-.3-5.47-1.33-5.47-5.94 0-1.31.47-2.38 1.24-3.22-.13-.3-.54-1.52.12-3.18 0 0 1-.32 3.3 1.23a11.5 11.5 0 016 0c2.3-1.55 3.3-1.23 3.3-1.23.66 1.66.25 2.88.12 3.18.77.84 1.24 1.91 1.24 3.22 0 4.62-2.8 5.64-5.48 5.94.43.37.81 1.1.81 2.22v3.29c0 .32.22.69.83.58A12 12 0 0012 .3z"/></svg></a>
+        </div>
+      </div>
+      <!-- Aluno 2 -->
+      <div class="student-card">
+        <div class="student-photo">
+          <img src="foto-aluno-2.jpg" alt="Foto do aluno 2" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+          <span class="ph-txt">foto-aluno-2.jpg</span>
+        </div>
+        <h3>Kauã Nascimento 2</h3>
+        <p class="role"><a href="#" target="_blank">link do perfil</a></p>
+        <div class="icon-row">
+          <a href="#" target="_blank" title="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM.5 8.5h4V23h-4V8.5zM8.5 8.5h3.8v2h.1c.53-.98 1.83-2 3.77-2 4.03 0 4.78 2.5 4.78 5.75V23h-4v-6.9c0-1.65-.03-3.77-2.3-3.77-2.3 0-2.65 1.8-2.65 3.65V23h-4V8.5z"/></svg></a>
+          <a href="#" target="_blank" title="Instagram"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2c2.7 0 3.06.01 4.12.06 1.06.05 1.79.22 2.43.47.66.26 1.22.6 1.77 1.15.55.55.89 1.11 1.15 1.77.25.64.42 1.37.47 2.43C21.99 8.94 22 9.3 22 12s-.01 3.06-.06 4.12c-.05 1.06-.22 1.79-.47 2.43-.26.66-.6 1.22-1.15 1.77-.55.55-1.11.89-1.77 1.15-.64.25-1.37.42-2.43.47C15.06 21.99 14.7 22 12 22s-3.06-.01-4.12-.06c-1.06-.05-1.79-.22-2.43-.47-.66-.26-1.22-.6-1.77-1.15-.55-.55-.89-1.11-1.15-1.77-.25-.64-.42-1.37-.47-2.43C2.01 15.06 2 14.7 2 12s.01-3.06.06-4.12c.05-1.06.22-1.79.47-2.43.26-.66.6-1.22 1.15-1.77.55-.55 1.11-.89 1.77-1.15.64-.25 1.37-.42 2.43-.47C8.94 2.01 9.3 2 12 2zm0 5a5 5 0 100 10 5 5 0 000-10zm0 8.2a3.2 3.2 0 110-6.4 3.2 3.2 0 010 6.4zm5.4-8.4a1.17 1.17 0 100-2.34 1.17 1.17 0 000 2.34z"/></svg></a>
+          <a href="#" target="_blank" title="GitHub"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .3a12 12 0 00-3.8 23.38c.6.1.82-.26.82-.58v-2.2c-3.34.72-4.04-1.6-4.04-1.6-.55-1.4-1.34-1.76-1.34-1.76-1.1-.75.08-.73.08-.73 1.2.09 1.84 1.24 1.84 1.24 1.08 1.84 2.83 1.3 3.52 1 .1-.79.42-1.3.76-1.6-2.67-.3-5.47-1.33-5.47-5.94 0-1.31.47-2.38 1.24-3.22-.13-.3-.54-1.52.12-3.18 0 0 1-.32 3.3 1.23a11.5 11.5 0 016 0c2.3-1.55 3.3-1.23 3.3-1.23.66 1.66.25 2.88.12 3.18.77.84 1.24 1.91 1.24 3.22 0 4.62-2.8 5.64-5.48 5.94.43.37.81 1.1.81 2.22v3.29c0 .32.22.69.83.58A12 12 0 0012 .3z"/></svg></a>
+        </div>
+      </div>
+      <!-- Aluno 3 -->
+      <div class="student-card">
+        <div class="student-photo">
+          <img src="foto-aluno-3.jpg" alt="Foto do aluno 3" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+          <span class="ph-txt">foto-aluno-3.jpg</span>
+        </div>
+        <h3>Carlos Gustavo</h3>
+        <p class="role"><a href="#" target="_blank">link do perfil</a></p>
+        <div class="icon-row">
+          <a href="#" target="_blank" title="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM.5 8.5h4V23h-4V8.5zM8.5 8.5h3.8v2h.1c.53-.98 1.83-2 3.77-2 4.03 0 4.78 2.5 4.78 5.75V23h-4v-6.9c0-1.65-.03-3.77-2.3-3.77-2.3 0-2.65 1.8-2.65 3.65V23h-4V8.5z"/></svg></a>
+          <a href="#" target="_blank" title="Instagram"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2c2.7 0 3.06.01 4.12.06 1.06.05 1.79.22 2.43.47.66.26 1.22.6 1.77 1.15.55.55.89 1.11 1.15 1.77.25.64.42 1.37.47 2.43C21.99 8.94 22 9.3 22 12s-.01 3.06-.06 4.12c-.05 1.06-.22 1.79-.47 2.43-.26.66-.6 1.22-1.15 1.77-.55.55-1.11.89-1.77 1.15-.64.25-1.37.42-2.43.47C15.06 21.99 14.7 22 12 22s-3.06-.01-4.12-.06c-1.06-.05-1.79-.22-2.43-.47-.66-.26-1.22-.6-1.77-1.15-.55-.55-.89-1.11-1.15-1.77-.25-.64-.42-1.37-.47-2.43C2.01 15.06 2 14.7 2 12s.01-3.06.06-4.12c.05-1.06.22-1.79.47-2.43.26-.66.6-1.22 1.15-1.77.55-.55 1.11-.89 1.77-1.15.64-.25 1.37-.42 2.43-.47C8.94 2.01 9.3 2 12 2zm0 5a5 5 0 100 10 5 5 0 000-10zm0 8.2a3.2 3.2 0 110-6.4 3.2 3.2 0 010 6.4zm5.4-8.4a1.17 1.17 0 100-2.34 1.17 1.17 0 000 2.34z"/></svg></a>
+          <a href="#" target="_blank" title="GitHub"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .3a12 12 0 00-3.8 23.38c.6.1.82-.26.82-.58v-2.2c-3.34.72-4.04-1.6-4.04-1.6-.55-1.4-1.34-1.76-1.34-1.76-1.1-.75.08-.73.08-.73 1.2.09 1.84 1.24 1.84 1.24 1.08 1.84 2.83 1.3 3.52 1 .1-.79.42-1.3.76-1.6-2.67-.3-5.47-1.33-5.47-5.94 0-1.31.47-2.38 1.24-3.22-.13-.3-.54-1.52.12-3.18 0 0 1-.32 3.3 1.23a11.5 11.5 0 016 0c2.3-1.55 3.3-1.23 3.3-1.23.66 1.66.25 2.88.12 3.18.77.84 1.24 1.91 1.24 3.22 0 4.62-2.8 5.64-5.48 5.94.43.37.81 1.1.81 2.22v3.29c0 .32.22.69.83.58A12 12 0 0012 .3z"/></svg></a>
+        </div>
+      </div>
+      <!-- Aluno 4 -->
+      <div class="student-card">
+        <div class="student-photo">
+          <img src="foto-aluno-4.jpg" alt="Foto do aluno 4" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+          <span class="ph-txt">foto-aluno-4.jpg</span>
+        </div>
+        <h3>Carlos Gustavo</h3>
+        <p class="role"><a href="#" target="_blank">link do perfil</a></p>
+        <div class="icon-row">
+          <a href="#" target="_blank" title="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM.5 8.5h4V23h-4V8.5zM8.5 8.5h3.8v2h.1c.53-.98 1.83-2 3.77-2 4.03 0 4.78 2.5 4.78 5.75V23h-4v-6.9c0-1.65-.03-3.77-2.3-3.77-2.3 0-2.65 1.8-2.65 3.65V23h-4V8.5z"/></svg></a>
+          <a href="#" target="_blank" title="Instagram"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2c2.7 0 3.06.01 4.12.06 1.06.05 1.79.22 2.43.47.66.26 1.22.6 1.77 1.15.55.55.89 1.11 1.15 1.77.25.64.42 1.37.47 2.43C21.99 8.94 22 9.3 22 12s-.01 3.06-.06 4.12c-.05 1.06-.22 1.79-.47 2.43-.26.66-.6 1.22-1.15 1.77-.55.55-1.11.89-1.77 1.15-.64.25-1.37.42-2.43.47C15.06 21.99 14.7 22 12 22s-3.06-.01-4.12-.06c-1.06-.05-1.79-.22-2.43-.47-.66-.26-1.22-.6-1.77-1.15-.55-.55-.89-1.11-1.15-1.77-.25-.64-.42-1.37-.47-2.43C2.01 15.06 2 14.7 2 12s.01-3.06.06-4.12c.05-1.06.22-1.79.47-2.43.26-.66.6-1.22 1.15-1.77.55-.55 1.11-.89 1.77-1.15.64-.25 1.37-.42 2.43-.47C8.94 2.01 9.3 2 12 2zm0 5a5 5 0 100 10 5 5 0 000-10zm0 8.2a3.2 3.2 0 110-6.4 3.2 3.2 0 010 6.4zm5.4-8.4a1.17 1.17 0 100-2.34 1.17 1.17 0 000 2.34z"/></svg></a>
+          <a href="#" target="_blank" title="GitHub"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .3a12 12 0 00-3.8 23.38c.6.1.82-.26.82-.58v-2.2c-3.34.72-4.04-1.6-4.04-1.6-.55-1.4-1.34-1.76-1.34-1.76-1.1-.75.08-.73.08-.73 1.2.09 1.84 1.24 1.84 1.24 1.08 1.84 2.83 1.3 3.52 1 .1-.79.42-1.3.76-1.6-2.67-.3-5.47-1.33-5.47-5.94 0-1.31.47-2.38 1.24-3.22-.13-.3-.54-1.52.12-3.18 0 0 1-.32 3.3 1.23a11.5 11.5 0 016 0c2.3-1.55 3.3-1.23 3.3-1.23.66 1.66.25 2.88.12 3.18.77.84 1.24 1.91 1.24 3.22 0 4.62-2.8 5.64-5.48 5.94.43.37.81 1.1.81 2.22v3.29c0 .32.22.69.83.58A12 12 0 0012 .3z"/></svg></a>
+        </div>
+      </div>
+      <!-- Aluno 5 -->
+      <div class="student-card">
+        <div class="student-photo">
+          <img src="foto-aluno-5.jpg" alt="Foto do aluno 5" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+          <span class="ph-txt">foto-aluno-5.jpg</span>
+        </div>
+        <h3>Adoni Sena</h3>
+        <p class="role"><a href="#" target="_blank">link do perfil</a></p>
+        <div class="icon-row">
+          <a href="#" target="_blank" title="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM.5 8.5h4V23h-4V8.5zM8.5 8.5h3.8v2h.1c.53-.98 1.83-2 3.77-2 4.03 0 4.78 2.5 4.78 5.75V23h-4v-6.9c0-1.65-.03-3.77-2.3-3.77-2.3 0-2.65 1.8-2.65 3.65V23h-4V8.5z"/></svg></a>
+          <a href="#" target="_blank" title="Instagram"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2c2.7 0 3.06.01 4.12.06 1.06.05 1.79.22 2.43.47.66.26 1.22.6 1.77 1.15.55.55.89 1.11 1.15 1.77.25.64.42 1.37.47 2.43C21.99 8.94 22 9.3 22 12s-.01 3.06-.06 4.12c-.05 1.06-.22 1.79-.47 2.43-.26.66-.6 1.22-1.15 1.77-.55.55-1.11.89-1.77 1.15-.64.25-1.37.42-2.43.47C15.06 21.99 14.7 22 12 22s-3.06-.01-4.12-.06c-1.06-.05-1.79-.22-2.43-.47-.66-.26-1.22-.6-1.77-1.15-.55-.55-.89-1.11-1.15-1.77-.25-.64-.42-1.37-.47-2.43C2.01 15.06 2 14.7 2 12s.01-3.06.06-4.12c.05-1.06.22-1.79.47-2.43.26-.66.6-1.22 1.15-1.77.55-.55 1.11-.89 1.77-1.15.64-.25 1.37-.42 2.43-.47C8.94 2.01 9.3 2 12 2zm0 5a5 5 0 100 10 5 5 0 000-10zm0 8.2a3.2 3.2 0 110-6.4 3.2 3.2 0 010 6.4zm5.4-8.4a1.17 1.17 0 100-2.34 1.17 1.17 0 000 2.34z"/></svg></a>
+          <a href="#" target="_blank" title="GitHub"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .3a12 12 0 00-3.8 23.38c.6.1.82-.26.82-.58v-2.2c-3.34.72-4.04-1.6-4.04-1.6-.55-1.4-1.34-1.76-1.34-1.76-1.1-.75.08-.73.08-.73 1.2.09 1.84 1.24 1.84 1.24 1.08 1.84 2.83 1.3 3.52 1 .1-.79.42-1.3.76-1.6-2.67-.3-5.47-1.33-5.47-5.94 0-1.31.47-2.38 1.24-3.22-.13-.3-.54-1.52.12-3.18 0 0 1-.32 3.3 1.23a11.5 11.5 0 016 0c2.3-1.55 3.3-1.23 3.3-1.23.66 1.66.25 2.88.12 3.18.77.84 1.24 1.91 1.24 3.22 0 4.62-2.8 5.64-5.48 5.94.43.37.81 1.1.81 2.22v3.29c0 .32.22.69.83.58A12 12 0 0012 .3z"/></svg></a>
+        </div>
+      </div>
+    </div>
+
+    <footer style="margin-top:3em; padding:0;">Documento preparado para fins de estudo de UX — mockups ilustrativos, não capturas de tela originais.</footer>
+  </section>
+
+</div>
+
+<script>
+  const scroller = document.getElementById('scroller');
+  const sections = Array.from(document.querySelectorAll('.section'));
+  const dots = Array.from(document.querySelectorAll('.dotnav button'));
+
+  dots.forEach(dot => {
+    dot.addEventListener('click', () => {
+      document.getElementById(dot.dataset.target).scrollIntoView({behavior:'smooth'});
+    });
+  });
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const id = entry.target.id;
+        dots.forEach(d => d.classList.toggle('active', d.dataset.target === id));
+      }
+    });
+  }, { root: scroller, threshold: 0.55 });
+
+  sections.forEach(s => observer.observe(s));
+</script>
+
+</body>
+</html>
