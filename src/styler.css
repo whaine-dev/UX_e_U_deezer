@@ -279,6 +279,12 @@ box-shadow:0 0 12px rgba(162,56,255,.7);
     object-fit:cover;
     display:block;
 }
+
+.phone-screen img, .phone-screen video{
+  width:100%; height:100%;
+  object-fit:cover;
+  display:block;
+}
 .phone-screen .placeholder{
     display:none;
     padding:24px;
@@ -295,6 +301,44 @@ box-shadow:0 0 12px rgba(162,56,255,.7);
     gap:18px;
     width:100%;
     max-width:1000px;
+}
+
+.mood-grid{
+  display:flex; flex-wrap:wrap;
+  gap:10px;
+}
+.mood-chip{
+  display:flex; align-items:center; gap:8px;
+  font-size:.78rem; font-weight:500;
+  padding:7px 14px 7px 10px;
+  border-radius:999px;
+  background:var(--card);
+  border:1px solid var(--border);
+  color:var(--text);
+}
+.mood-chip .dot{
+  width:12px; height:12px;
+  border-radius:50%;
+  flex:none;
+}
+
+.mood-grid{
+  display:flex; flex-wrap:wrap;
+  gap:10px;
+}
+.mood-chip{
+  display:flex; align-items:center; gap:8px;
+  font-size:.78rem; font-weight:500;
+  padding:7px 14px 7px 10px;
+  border-radius:999px;
+  background:var(--card);
+  border:1px solid var(--border);
+  color:var(--text);
+}
+.mood-chip .dot{
+  width:12px; height:12px;
+  border-radius:50%;
+  flex:none;
 }
 .card-grid.cols-3{ grid-template-columns:repeat(3,1fr); }
 @media (max-width:760px){ .card-grid, .card-grid.cols-3{ grid-template-columns:1fr; } }

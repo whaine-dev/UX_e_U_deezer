@@ -20,9 +20,10 @@
   <button data-target="home" data-label="Home"></button>
   <button data-target="player" data-label="Player"></button>
   <button data-target="acessibilidade" data-label="Acessibilidade"></button>
-  <button data-target="layout" data-label="Layout"></button>
-  <button data-target="tipografia" data-label="Tipografia & Cores"></button>
+  <button data-target="disposição" data-label="Disposição"></button>
   <button data-target="fluxo" data-label="Fluxo de Interação"></button>
+  <button data-target="tipografia" data-label="Tipografia"></button>
+  <button data-target="cores" data-label="Cores"></button>
   <button data-target="feedback" data-label="Feedback"></button>
   <button data-target="equipe" data-label="Equipe"></button>
 </nav>
@@ -81,13 +82,15 @@
   <section class="section alt" id="home">
     <div class="split reverse">
       <div class="phone-col">
-        <div class="phone-frame">
-          <!-- Substitua a imagem abaixo pelo print da tela Inicial (proporção iPhone 11) -->
-          <div class="phone-screen">
-            <img src="src/img/tela_de_inicial.webp" alt="Print da tela Inicial" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
-            <div class="placeholder"><b>PRINT · HOME</b>coloque aqui o arquivo<br>"print-home.jpg"<br>(proporção iPhone 11)</div>
-          </div>
-        </div>
+    <div class="phone-frame">
+      <!-- Substitua o vídeo abaixo por uma gravação de tela do Player (proporção iPhone 11) -->
+      <div class="phone-screen">
+      <video autoplay muted loop playsinline preload="auto" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+        <source src="src/img/tela_inicio.webm" type="video/webm">
+      </video>
+      <div class="placeholder"><b>VÍDEO · PLAYER</b>coloque aqui o arquivo<br>"video.mp4"<br>(gravação de tela, proporção iPhone 11)</div>
+    </div>
+  </div>
       </div>
       <div>
         <div class="eyebrow">Slide 2 · Interface · Douglas Cabral</div>
@@ -128,14 +131,16 @@
         </div>
       </div>
       <div class="phone-col">
-        <div class="phone-frame">
-          <!-- Substitua a imagem abaixo pelo print do Player (proporção iPhone 11) -->
-          <div class="phone-screen">
-            <img src="src/img/tela_de_musica.webp" alt="Print do Player de música" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
-            <div class="placeholder"><b>PRINT · PLAYER</b>coloque aqui o arquivo<br>"print-player.jpg"<br>(proporção iPhone 11)</div>
-          </div>
-        </div>
-      </div>
+    <div class="phone-frame">
+      <!-- Substitua o vídeo abaixo por uma gravação de tela do Player (proporção iPhone 11) -->
+      <div class="phone-screen">
+      <video autoplay muted loop playsinline preload="auto" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+        <source src="src/img/video_webp.webm" type="video/webm">
+      </video>
+      <div class="placeholder"><b>VÍDEO · PLAYER</b>coloque aqui o arquivo<br>"video.mp4"<br>(gravação de tela, proporção iPhone 11)</div>
+    </div>
+  </div>
+</div>
     </div>
   </section>
 
@@ -160,43 +165,13 @@
 
   <!-- ============ ANÁLISE 1 · LAYOUT ============ -->
   <section class="section" id="layout">
-    <div class="eyebrow">Análise 1 de 4</div>
-    <h2>Layout e Disposição de Elementos</h2>
+    <div class="eyebrow">Análise 1 de 4 · Carlos Gustavo</div>
+    <h2>Disposição de Elementos</h2>
     <div class="card-grid">
       <div class="card"><span class="num">1</span><h3>Hierarquia vertical</h3><p>As telas seguem um padrão claro: cabeçalho, conteúdo rolável e navegação fixa no rodapé — reduz a curva de aprendizado entre telas.</p></div>
       <div class="card"><span class="num">2</span><h3>Agrupamento por carrosséis</h3><p>Conteúdos relacionados (mixes, recomendações, histórico) são organizados em faixas horizontais, otimizando espaço vertical limitado.</p></div>
       <div class="card"><span class="num">3</span><h3>Zona de alcance do polegar</h3><p>Ações mais usadas (play, navegação) ficam nos terços inferiores da tela, coerente com uso de uma mão.</p></div>
       <div class="card"><span class="num">4</span><h3>Consistência entre telas</h3><p>Login, Home, Player e Configurações compartilham grade, espaçamentos e cantos arredondados — reforça identidade única do produto.</p></div>
-    </div>
-  </section>
-
-  <!-- ============ ANÁLISE 2 · TIPOGRAFIA & CORES ============ -->
-  <section class="section alt" id="tipografia">
-    <div class="eyebrow">Análise 2 de 4 · Keven Whaine</div>
-    <h2>Tipografia e Cores</h2>
-    <div class="type-color-grid">
-      <div>
-        <div class="col-label">Tipografia</div>
-        <div class="type-sample">
-          <div class="big">Sans-serif geométrica</div>
-          <p>Fonte de sistema (estilo Helvetica/SF), priorizando legibilidade em telas pequenas.</p>
-        </div>
-        <div class="type-sample">
-          <div class="big" style="font-weight:700;">Poucos pesos, uso consistente</div>
-          <p>Bold para títulos e faixas em reprodução; regular para metadados e descrições.</p>
-        </div>
-        <div class="type-sample">
-          <div class="big" style="font-size:1.1rem;">Escala hierárquica enxuta</div>
-          <p>3–4 tamanhos cobrem toda a interface, evitando ruído visual e facilitando escaneabilidade.</p>
-        </div>
-      </div>
-      <div>
-        <div class="col-label">Paleta de cores</div>
-        <div class="swatch-row"><div class="swatch" style="background:#121014;"></div><div><h3>Fundo primário</h3><p>Preto/cinza-escuro reduz fadiga visual em sessões longas de audição.</p></div></div>
-        <div class="swatch-row"><div class="swatch" style="background:var(--purple);"></div><div><h3>Acento principal — Roxo</h3><p>Usado em CTAs e estados ativos — reforça identidade da marca.</p></div></div>
-        <div class="swatch-row"><div class="swatch" style="background:var(--pink);"></div><div><h3>Acento secundário — Rosa/magenta</h3><p>Usado em gradientes e destaques pontuais, criando energia visual.</p></div></div>
-        <div class="swatch-row"><div class="swatch" style="background:#ffffff;"></div><div><h3>Texto e ícones ativos</h3><p>Branco puro sobre fundo escuro garante contraste máximo (WCAG AA/AAA).</p></div></div>
-      </div>
     </div>
   </section>
 
@@ -216,6 +191,76 @@
       <div class="card"><span class="num">2</span><h3>Padrões de navegação previsíveis</h3><p>Barra inferior fixa e gestos padrão (arrastar para minimizar player) seguem convenções já conhecidas.</p></div>
       <div class="card"><span class="num">3</span><h3>Baixa carga cognitiva por tela</h3><p>Cada tela tem uma ação primária evidente, evitando decisões simultâneas.</p></div>
       <div class="card"><span class="num">4</span><h3>Ponto de atenção</h3><p>Configurações de acessibilidade estão em submenu — usuários que dependem delas podem levar mais tempo para descobri-las.</p></div>
+    </div>
+  </section>
+
+  <!-- ============ ANÁLISE 4 · CORES ============ -->
+    <section class="section" id="tipografia">
+    <div class="eyebrow">Análise 3 de 5 · Keven Whaine</div>
+    <h2>Tipografia</h2>
+    <div class="type-color-grid">
+      <div>
+        <div class="type-sample">
+          <div class="big">Deezer Sans</div>
+          <p>Fonte corporativa própria, criada em parceria com o estúdio Koto Berlin, inspirada na forma oval da batida do logotipo.</p>
+        </div>
+        <div class="type-sample">
+          <div class="big" style="font-weight:700;">Fonte variável</div>
+          <p>Se adapta do texto condensado ao expandido, mantendo a identidade em qualquer tamanho.</p>
+        </div>
+      </div>
+      <div>
+        <div class="type-sample">
+          <div class="big" style="font-size:1.1rem;">Escala enxuta</div>
+          <p>3–4 tamanhos cobrem todo o app, evitando ruído visual.</p>
+        </div>
+        <div class="type-sample">
+          <div class="big" style="font-size:1.1rem;">Leitura rápida</div>
+          <p>Música é consumida em movimento — o texto precisa ser lido "de relance".</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section alt" id="cores">
+    <div class="split">
+      <div>
+        <div class="eyebrow">Análise 4 de 5 · Keven Whaine</div>
+        <h2>Cores</h2>
+
+        <div class="col-label">Paleta base</div>
+        <div class="swatch-row"><div class="swatch" style="background:#121014;"></div><div><h3>Fundo primário</h3><p>Preto/cinza-escuro (#000000 · #121212) reduz fadiga visual em sessões longas de audição.</p></div></div>
+        <div class="swatch-row"><div class="swatch" style="background:#A238FF;"></div><div><h3>Roxo Violeta — #A238FF</h3><p>Cor da logo (coração) e dos botões principais. É o acento de identidade do app.</p></div></div>
+        <div class="swatch-row"><div class="swatch" style="background:#ffffff;"></div><div><h3>Branco Puro — #FFFFFF</h3><p>Fundo do modo claro e cor principal de texto — garante contraste máximo (WCAG AA/AAA).</p></div></div>
+
+        <div class="col-label" style="margin-top:1.6em;">Cores dos Flow Moods</div>
+        <div class="mood-grid">
+          <div class="mood-chip"><span class="dot" style="background:#FF2D55;"></span>Energia (Treino) — #FF2D55</div>
+          <div class="mood-chip"><span class="dot" style="background:#FFCC00;"></span>Festa — #FFCC00</div>
+          <div class="mood-chip"><span class="dot" style="background:#007AFF;"></span>Foco — #007AFF</div>
+          <div class="mood-chip"><span class="dot" style="background:#5856D6;"></span>Relax — #5856D6</div>
+          <div class="mood-chip"><span class="dot" style="background:#FF2D70;"></span>Romântico — #FF2D70</div>
+          <div class="mood-chip"><span class="dot" style="background:#4CD964;"></span>Novidades — #4CD964</div>
+        </div>
+
+        <div class="card-grid" style="margin-top:1.8em;">
+          <div class="card"><h3>Sinestesia Digital</h3><p>O app muda de cor conforme o humor da música (Flow Moods), criando uma imersão psicológica ligada ao que o usuário está sentindo.</p></div>
+          <div class="card"><h3>Acessibilidade Cromática</h3><p>As opções de cor de destaque em modo claro/escuro seguem diretrizes WCAG, ajudando pessoas com baixa visão ou daltonismo.</p></div>
+          <div class="card"><h3>Rebranding: o Roxo como Marca</h3><p>A troca do antigo equalizador colorido pelo coração roxo assimétrico posiciona a Deezer como jovem e criativa, se diferenciando do verde do Spotify.</p></div>
+        </div>
+      </div>
+
+      <div class="phone-col">
+        <div class="phone-frame">
+          <!-- Substitua o vídeo abaixo por uma gravação de tela mostrando os Flow Moods mudando de cor -->
+          <div class="phone-screen">
+            <video autoplay muted loop playsinline preload="auto" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+              <source src="src/img/video_webp.webm" type="video/webm">
+            </video>
+            <div class="placeholder"><b>VÍDEO · CORES / MOODS</b>coloque aqui o arquivo<br>"video_webp.webm"<br>(gravação de tela, proporção iPhone 11)</div>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
