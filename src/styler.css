@@ -404,8 +404,34 @@ box-shadow:0 0 12px rgba(162,56,255,.7);
     border:1px solid var(--border);
     flex:none;
 }
+
+.type-sample{
+    margin-bottom:20px;
+    background:var(--card);
+    border:1px solid var(--border);
+    border-radius:14px;
+    padding:18px 20px;
+    transition:0.3s;
+}
+.type-sample:hover{
+    transform: translateY(-5px);
+    box-shadow: 0px 0px 10px 0.8px var(--pink);
+}
 .swatch-row h3{ font-size:.92rem; font-weight:600; }
 .swatch-row p{ color:var(--muted); font-size:.8rem; }
+
+.swatch-row{
+    display:flex; align-items:center; gap:14px; margin-bottom:16px;
+    background:var(--card);
+    border:1px solid var(--border);
+    border-radius:14px;
+    padding:14px 18px;
+    transition:0.3s;
+}
+.swatch-row:hover{
+    transform: translateY(-5px);
+    box-shadow: 0px 0px 10px 0.8px var(--pink);
+}
 
 /* ---------- FLUXO ---------- */
 .flow{
@@ -496,3 +522,124 @@ footer{
 .flu{
     box-shadow: 0px 0px 20px 10px #F4541B;
 }
+
+/* ---------- BALANÇO: POSITIVOS / NEGATIVOS / MELHORIAS ---------- */
+.balance-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:2.4vw;
+    width:100%;
+    max-width:1200px;
+}
+@media (max-width:900px){ .balance-grid{ grid-template-columns:1fr; gap:36px; } }
+.balance-col-title{
+    font-size:.78rem;
+    font-weight:700;
+    letter-spacing:.08em;
+    text-transform:uppercase;
+    margin-bottom:16px;
+    display:flex; align-items:center; gap:8px;
+}
+.balance-col-title .dot{ width:9px; height:9px; border-radius:50%; }
+.balance-item{
+    background:var(--card);
+    border:1px solid var(--border);
+    border-left:3px solid;
+    border-radius:10px;
+    padding:12px 14px;
+    margin-bottom:10px;
+    transition:0.3s;
+}
+.balance-item:hover{ transform:translateX(3px); }
+.balance-item h4{ font-size:.85rem; font-weight:600; margin-bottom:2px; }
+.balance-item p{ color:var(--muted); font-size:.78rem; line-height:1.4; }
+
+.balance-col.positivo .balance-col-title{ color:#4CD964; }
+.balance-col.positivo .balance-col-title .dot{ background:#4CD964; }
+.balance-col.positivo .balance-item{ border-left-color:#4CD964; }
+
+.balance-col.negativo .balance-col-title{ color:var(--pink); }
+.balance-col.negativo .balance-col-title .dot{ background:var(--pink); }
+.balance-col.negativo .balance-item{ border-left-color:var(--pink); }
+
+.balance-col.melhoria .balance-col-title{ color:var(--purple); }
+.balance-col.melhoria .balance-col-title .dot{ background:var(--purple); }
+.balance-col.melhoria .balance-item{ border-left-color:var(--purple); }
+
+.balance-item.verde:hover{
+    border-color:#4CD964;
+    box-shadow:0px 0px 10px 0.8px #4CD964;
+    transform:translateY(-3px);
+}
+.balance-item.rosa:hover{
+    border-color:var(--pink);
+    box-shadow:0px 0px 10px 0.8px var(--pink);
+    transform:translateY(-3px);
+}
+.balance-item.roxo:hover{
+    border-color:var(--purple);
+    box-shadow:0px 0px 10px 0.8px var(--purple);
+    transform:translateY(-3px);
+}
+
+/* ---------- FEEDBACK DA COMUNIDADE ---------- */
+.community-grid{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:18px;
+    width:100%;
+    max-width:1000px;
+}
+@media (max-width:760px){ .community-grid{ grid-template-columns:1fr; } }
+.community-card{
+    background:var(--card);
+    border:1px solid var(--border);
+    border-radius:10px;
+    padding:16px 20px;
+    transition:0.3s;
+}
+.community-card:hover{ transform:translateY(-4px); box-shadow:0px 0px 10px 0.8px var(--pink); }
+.community-card .user{
+    font-size:.78rem; font-weight:700;
+    color:var(--pink);
+    margin-bottom:6px;
+}
+.community-card p{ color:var(--text); font-size:.85rem; line-height:1.5; }
+.community-source{
+    color:var(--muted); font-size:.72rem;
+    margin-top:2em;
+}
+
+a{
+    text-decoration:none;
+    color:inherit;
+}
+
+  @keyframes cicla-fundo {
+    0%, 45%   { background: #121014; }
+    50%, 95%  { background: #ffffff; }
+    100%      { background: #121014; }
+  }
+
+  @keyframes cicla-acento {
+    0%   { background: #7B2FE0; }
+    14%  { background: #D62DC0; }
+    28%  { background: #E3352F; }
+    42%  { background: #FF6A1A; }
+    57%  { background: #2255F0; }
+    71%  { background: #E8E14A; }
+    85%  { background: linear-gradient(135deg,#D9A6F0,#B23FE0); }
+    100% { background: #7B2FE0; }
+  }
+
+  .swatch-anim-bg {
+    animation: cicla-fundo 6s ease-in-out infinite;
+  }
+  .swatch-anim-acento {
+    animation: cicla-acento 7s ease-in-out infinite;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .swatch-anim-bg, .swatch-anim-acento { animation: none; }
+  }
+
