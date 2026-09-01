@@ -6,7 +6,7 @@
 <title>Análise de Design UX/UI — Deezer Mobile</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="src/styler.css">
+<link rel="stylesheet" href="styler.css">
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
 </head>
@@ -16,12 +16,12 @@
 <nav class="dotnav" id="dotnav">
   <div class="track"></div>
   <button data-target="hero" data-label="Início"></button>
-  <button data-target="login" data-label="Login"></button>
   <button data-target="home" data-label="Home"></button>
   <button data-target="player" data-label="Player"></button>
   <button data-target="acessibilidade" data-label="Acessibilidade"></button>
   <button data-target="disposicao" data-label="Disposição"></button>
   <button data-target="fluxo" data-label="Fluxo de Interação"></button>
+  <button data-target="facilidade" data-label="Facilidade de Uso"></button>
   <button data-target="tipografia" data-label="Tipografia"></button>
   <button data-target="cores" data-label="Cores"></button>
   <button data-target="feedback" data-label="Feedback"></button>
@@ -41,40 +41,10 @@
 </div>
 
     <div class="chip-row">
-      <span class="chip">Login</span>
       <span class="chip">Home</span>
       <span class="chip">Player</span>
       <span class="chip">Navegação</span>
       <span class="chip">Acessibilidade</span>
-    </div>
-  <!-- ============ SLIDE 2 · LOGIN ============ -->
-  <section class="section" id="login">
-    <div class="split">
-      <div>
-        <div class="eyebrow">Slide 1 · Kauã Nascimento</div>
-        <h2>Tela de Boas-vindas e Login</h2>
-        <div class="insight">
-          <div class="num">1</div>
-          <div><h3>Hierarquia visual clara</h3><p>Logotipo e proposta de valor centralizados guiam o olhar antes da ação.</p></div>
-        </div>
-        <div class="insight">
-          <div class="num">2</div>
-          <div><h3>Múltiplas opções de acesso</h3><p>Login social reduz fricção; opção por e-mail atende quem prefere método tradicional.</p></div>
-        </div>
-        <div class="insight">
-          <div class="num">3</div>
-          <div><h3>Contraste alto</h3><p>A combinação de tons escuros com elementos em roxo e textos claros cria contraste entre os diferentes componentes da interface, facilitando a identificação das informações e ações principais.</p></div>
-        </div>
-      </div>
-      <div class="phone-col">
-        <div class="phone-frame">
-          <!-- Substitua a imagem abaixo pelo print da tela de Login (proporção iPhone 11) -->
-          <div class="phone-screen">
-            <img src="src/img/tela_de_login.webp" alt="Print da tela de Login" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
-            <div class="placeholder"><b>PRINT · LOGIN</b>coloque aqui o arquivo<br>"print-login.jpg"<br>(proporção iPhone 11)</div>
-          </div>
-        </div>
-      </div>
     </div>
   </section>
 
@@ -86,7 +56,7 @@
       <!-- Substitua o vídeo abaixo por uma gravação de tela do Player (proporção iPhone 11) -->
       <div class="phone-screen">
       <video autoplay muted loop playsinline preload="auto" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
-        <source src="src/img/tela_inicio.webm" type="video/webm">
+        <source src="img/tela_inicio.webm" type="video/webm">
       </video>
       <div class="placeholder"><b>VÍDEO · PLAYER</b>coloque aqui o arquivo<br>"video.mp4"<br>(gravação de tela, proporção iPhone 11)</div>
     </div>
@@ -135,23 +105,12 @@
       <!-- Substitua o vídeo abaixo por uma gravação de tela do Player (proporção iPhone 11) -->
       <div class="phone-screen">
       <video autoplay muted loop playsinline preload="auto" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
-        <source src="src/img/video_webp.webm" type="video/webm">
+        <source src="img/video_webp.webm" type="video/webm">
       </video>
       <div class="placeholder"><b>VÍDEO · PLAYER</b>coloque aqui o arquivo<br>"video.mp4"<br>(gravação de tela, proporção iPhone 11)</div>
     </div>
   </div>
 </div>
-    </div>
-  </section>
-
-  <!-- ============ SLIDE 3 · FUNCIONALIDADES / ACESSIBILIDADE ============ -->
-  <section class="section alt" id="acessibilidade">
-    <div class="eyebrow">Slide 4 · Kauã Nascimento</div>
-    <h2>Funcionalidades e Acessibilidade</h2>
-    <div class="card-grid cols-3">
-      <div class="card"><span class="num">1</span><h3>Configurações de acessibilidade</h3><p>O aplicativo possui uma seção de acessibilidade nas configurações, que direciona para as informações e políticas oficiais de acessibilidade da Deezer.</p></div>
-<div class="card"><span class="num">2</span><h3>Compatibilidade com leitores de tela</h3><p>O Deezer disponibiliza informações sobre acessibilidade e recursos que ajudam pessoas com diferentes necessidades a utilizar a plataforma com mais facilidade e autonomia.</p></div>
-<div class="card"><span class="num">3</span><h3>Melhorias contínuas de acessibilidade</h3><p>AA Deezer vem realizando melhorias para reduzir barreiras de uso e tornar diferentes áreas da plataforma mais acessíveis para seus usuários.</p></div>
     </div>
   </section>
 
@@ -170,14 +129,24 @@
   <!-- ============ ANÁLISE 3 · FLUXO ============ -->
   <section class="section" id="fluxo">
     <div class="eyebrow">Slide 6 · Carlos Gustavo</div>
-    <h2>Fluxo de Interação e Facilidade de Uso</h2>
-    <div class="flow">
-      <div class="step">Onboarding / Login</div><div class="arrow">→</div>
+    <h2>Fluxo de Interação</h2>
+    <p class="lead">O caminho do usuário até ouvir uma música segue uma sequência curta e direta, sem desvios ou etapas redundantes.</p>
+    <div class="flow flow-big">
       <div class="step">Descoberta (Home)</div><div class="arrow">→</div>
       <div class="step">Seleção de conteúdo</div><div class="arrow">→</div>
-      <div class="step">Reprodução (Player)</div><div class="arrow">→</div>
-      <div class="step">Ajustes / Acessibilidade</div>
+      <div class="step">Reprodução (Player)</div>
     </div>
+    <div class="card-grid" style="margin-top:2em;">
+      <div class="card"><span class="num">1</span><h3>Entrada rápida no fluxo</h3><p>Login e tela inicial já entregam conteúdo relevante de imediato, sem etapas de configuração antes da primeira descoberta.</p></div>
+      <div class="card"><span class="num">2</span><h3>Transições contínuas entre telas</h3><p>A passagem de um carrossel para o player mantém contexto visual (capa, cores), reforçando que é uma sequência única.</p></div>
+      <div class="card"><span class="num">3</span><h3>Mini-player como elo do fluxo</h3><p>Ao navegar entre home, busca e configurações, o mini-player permanece visível — o usuário nunca perde o fio da reprodução.</p></div>
+    </div>
+  </section>
+
+  <!-- ============ ANÁLISE 3B · FACILIDADE DE USO ============ -->
+  <section class="section alt" id="facilidade">
+    <div class="eyebrow">Slide 7 · Kauã Nascimento</div>
+    <h2>Facilidade de Uso</h2>
     <div class="card-grid">
       <div class="card"><span class="num">1</span><h3>Poucos passos até o objetivo principal</h3><p>Do login à primeira reprodução são no máximo 2–3 toques, reduzindo abandono no primeiro uso.</p></div>
       <div class="card"><span class="num">2</span><h3>Padrões de navegação previsíveis</h3><p>Barra inferior fixa e gestos padrão (arrastar para minimizar player) seguem convenções já conhecidas.</p></div>
@@ -188,7 +157,7 @@
 
   <!-- ============ ANÁLISE 4 · CORES ============ -->
     <section class="section" id="tipografia">
-    <div class="eyebrow">Slide 7 · Keven Whaine</div>
+    <div class="eyebrow">Slide 8 · Keven Whaine</div>
     <h2>Tipografia</h2>
     <div class="type-color-grid">
       <div>
@@ -217,7 +186,7 @@
   <section class="section alt" id="cores">
     <div class="split">
       <div>
-        <div class="eyebrow">Slide 8 · Keven Whaine</div>
+        <div class="eyebrow">Slide 9 · Keven Whaine</div>
         <h2>Cores</h2>
 
         <div class="col-label">Tema personalizável</div>
@@ -251,7 +220,7 @@
           <!-- Substitua o vídeo abaixo por uma gravação de tela mostrando a troca de cor do tema e o fundo do player se adaptando à capa do álbum -->
           <div class="phone-screen">
             <video autoplay muted loop playsinline preload="auto" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
-              <source src="src/img/cores.webm" type="video/webm">
+              <source src="img/cores.webm" type="video/webm">
             </video>
             <div class="placeholder"><b>VÍDEO · CORES / TEMA</b>coloque aqui o arquivo<br>"video_webp.webm"<br>(gravação de tela, proporção iPhone 11)</div>
           </div>
@@ -261,7 +230,7 @@
   </section>
   <!-- ============ ANÁLISE 4 · FEEDBACK & RECOMENDAÇÕES ============ -->
   <section class="section alt" id="feedback">
-    <div class="eyebrow">Slide 9 · Àdoni Sena</div>
+    <div class="eyebrow">Slide 10 · Àdoni Sena</div>
     <h2>Feedback do Usuário e Recomendações</h2>
     <div class="col-label" style="margin-top:2.4em;">O que a comunidade Deezer está pedindo</div>
 <div class="community-grid">
@@ -294,7 +263,6 @@
     <div class="user">Rafael Trindade</div>
     <p>Adicionar uma integração com o app Discord, como o Spotify disponibiliza. Onde é capaz de verem que música você está ouvindo e pode ser criada uma sala para outras pessoas se juntarem a você e fazer uma party juntos ouvindo a mesma música</p>
   </div>
-</div>
 </a>
 
 <p class="community-source">Pedidos reais levantados no fórum oficial de sugestões da Deezer — mostram que as recomendações do grupo caminham na mesma direção do que os próprios usuários pedem.</p>
@@ -302,7 +270,7 @@
 
   <!-- ============ BALANÇO: POSITIVOS, NEGATIVOS E MELHORIAS ============ -->
 <section class="section alt" id="balanco">
-  <div class="eyebrow">Slide 10 · Àdoni Sena</div>
+  <div class="eyebrow">Slide 11 · Àdoni Sena</div>
   <h2>Pontos Positivos, Negativos e Melhorias</h2>
   <div class="balance-grid">
 
@@ -331,6 +299,8 @@
     </div>
 
   </div>
+
+</section>
 
 </div>
 
