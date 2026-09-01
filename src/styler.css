@@ -132,12 +132,15 @@ box-shadow:0 0 12px rgba(162,56,255,.7);
     padding:6px 14px;
     border-radius:999px;
     margin-bottom:24px;
+    align-self:center;
 }
 #hero h1{
     font-size:clamp(2.2rem,6vw,4.6rem);
     font-weight:700;
     line-height:1.05;
     max-width:900px;
+    align-self:center;
+    text-align:center;
 }
 #hero h1 span{
     background:var(--grad);
@@ -145,7 +148,11 @@ box-shadow:0 0 12px rgba(162,56,255,.7);
     background-clip:text;
     color:transparent;
 }
-#hero .lead{ margin-top:22px; }
+#hero .lead{
+    margin-top:22px;
+    align-self:center;
+    text-align:center;
+}
     .about-ux{
     margin-top:2.5em;
     max-width:640px;
@@ -156,10 +163,14 @@ box-shadow:0 0 12px rgba(162,56,255,.7);
     font-size:.9rem;
     line-height:1.6;
     color:var(--muted);
+    align-self:center;
+    text-align:center;
 }
 .chip-row{
     display:flex; flex-wrap:wrap; gap:10px;
     margin-top:2.4em;
+    align-self:center;
+    justify-content:center;
 }
 .chip{
     font-size:.78rem;
@@ -642,4 +653,3 @@ a{
   @media (prefers-reduced-motion: reduce) {
     .swatch-anim-bg, .swatch-anim-acento { animation: none; }
   }
-
